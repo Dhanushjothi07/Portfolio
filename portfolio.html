@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDJ Portfolio</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="portfolio.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lustria&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- nav menu -->
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Logo</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" id="home1" onclick="changecolor1()" class="nav-link ">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" id="about1" onclick="changecolor2()" class="nav-link ">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects"  id="project1" onclick="changecolor3()" class="nav-link ">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" id="contact1" onclick="changecolor4()" class="nav-link ">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- dark mode -->
+            <div class="mode">
+                <div class="moon-sun" id="toogle-switch">
+                        <i class="fa fa-moon" id="moon"></i>
+                        <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFuction()" ></i>
+            </div>
+        </nav>
+
+            <main class="wrapper">
+                <section class="featured-box" id="home">
+                    <div class="featured-text">
+                        <div class="hello">
+                            <p>Hello I'm</p>
+                        </div>
+                    
+                          <div class="text-info">
+                            <p> DhanushJothi P R! I'm a Front-End Developer<br>I Specialize in Buliding 
+                            visually appealing and intutive user interface that enhance user experience</p>
+                          </div>
+                          <div class="text-btn">
+                            <button class="btn hire-btn">Hire Me</button>
+                            <button class="btn">Download CV<i class="uil uil-file"></i></button>
+                          </div>
+                          <div class="social_icons">
+                            <div class="icon_circle"></div>
+                            <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+                            <div class="icon"><i class="fa-brands fa-instagram icon"></i></div>
+                            <div class="icon"><i class="fa-brands fa-behance icon"></i></div>
+                            <div class="icon"><i class="fa-brands fa-github icon"></i></div>
+                          </div>
+                         </div>
+                     <div class="featured-image">
+                            <div class="image">
+                                <img src="C:\Users\rd070\OneDrive\Desktop\Greens Ins\HTML CSS JS\js\portfolioimg.jpg" alt="">
+                            </div>
+                     </div>    
+                </section>
+                <!-- about box -->
+                 <section class="section" id="about">
+                    <div class="top-header">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-info">
+                                <figure class="about-me">
+                                    <figcaption>
+                                        <img src="C:\Users\rd070\OneDrive\Desktop\Greens Ins\HTML CSS JS\js\portfolioimg.jpg" alt="" class="profile"/>
+                                        <h2>Front-End Developer</h2>
+                                        <p>My name is DhansuhJothi P R! I'm a Front-End Developer</p>
+                                        <p>with expertise in HTML,CSS,JS and modern Library like REACT JS</p>
+                                        <p>I create dynamic and accessible websites that looks great and perform
+                                            seamlessly across devices
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                                <button class="about-me-btn">Hire Me</button>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-box">
+                                <span class="title">HTML</span>  
+                                <div class="skill-bar html">
+                                    <span class="skill-per"></span>
+                                    <!-- <span class="tooltip">85%</span> -->
+                                </div>  
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">CSS</span>  
+                                <div class="skill-bar css">
+                                    <span class="skill-per"></span>
+                                    <!-- <span class="tooltip">70%</span> -->
+                                </div>  
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">JavaScript</span>  
+                                <div class="skill-bar ">
+                                    <span class="skill-per javascript"></span>
+                                    <!-- <span class="tooltip">70%</span> -->
+                                </div>  
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">React Js</span>  
+                                <div class="skill-bar ">
+                                    <span class="skill-per reactjs"></span>
+                                    <!-- <span class="tooltip">70%</span> -->
+                                </div>  
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">Figma</span>  
+                                <div class="skill-bar">
+                                    <span class="skill-per figma"></span>
+                                    <!-- <span class="tooltip">95%</span> -->
+                                </div>  
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">Photoshop</span>  
+                                <div class="skill-bar ">
+                                    <span class="skill-per photoshop"></span>
+                                    <!-- <span class="tooltip">85%</span> -->
+                                </div>  
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">Adobe Illustrator</span>  
+                                <div class="skill-bar ">
+                                    <span class="skill-per adobeillustrator"></span>
+                                    <!-- <span class="tooltip">70%</span> -->
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                 </section>
+                 
+                 <!-- Project Box -->
+                  <section class="section" id="projects">
+                    <div class="top-header">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-box">
+                            <i class="uil uil-briefcase-alt"></i>
+                            <h3>Completed</h3>
+                            <label>10+ Finshed Projects</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-users-alt"></i>
+                            <h3>Clients</h3>
+                            <label>5+ Happy Clients</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-award"></i>
+                            <h3>Experience</h3>
+                            <label>Beginner as a Front-End Developer</label>
+                        </div>
+                    </div>
+                  </section>
+                  <!-- contact box -->
+                   <section class="section" id="contact">
+                    <div class="top-header">
+                        <h1>Let's Work Together</h1>
+                        <span>I you have any Project Ideas ,Just Contact Me here</span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                                <p><i class="uil uil-envelope"></i>dhanushjothi070801@gmail.com</p>
+                                <p><i class="uil uil-phone"></i>Phone:8637648595</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input type="text" class="input-field" placeholder="Your Name" id="">
+                                    <input type="email" class="input-field" placeholder="Your Email" id="">
+                                </div>
+                            
+                            <div class="text-area">
+                                <input type="text" class="input-subject" placeholder="Subject" id="">
+                                <textarea placeholder="Message" id=""></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send <i class="uil uil-message"></i></button>
+                            </div>
+                       </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- footer -->
+             <footer>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#about">About</a>
+                        </li> <li class="footer_menu_list">
+                            <a href="#projects">Projects</a>
+                        </li>
+                    </li> <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="footer-social-icons">
+                    <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+                            <div class="icon"><i class="fa-brands fa-instagram icon"></i></div>
+                            <div class="icon"><i class="fa-brands fa-behance icon"></i></div>
+                            <div class="icon"><i class="fa-brands fa-github icon"></i></div>
+                </div>
+                <div class="bottom-footer">
+                    <p>Copyright &<a href="#home" style="text-decoration: none;"> Code Designers</a> All rights reserved 2024</p>
+                </div>
+             </footer>
+    </div>
+  <script >
+    let home=document.getElementById("home1")
+    let about=document.getElementById("about1")
+    let project1=document.getElementById("project1")
+    let contact=document.getElementById("contact1")
+    function changecolor1(){
+        home.classList.add("active-link")
+        about.classList.remove("active-link")
+        project1.classList.remove("active-link")
+        contact.classList.remove("active-link")
+    }
+    function changecolor2(){
+         home.classList.remove("active-link")
+         about.classList.add("active-link")
+         project1.classList.remove("active-link")
+         contact.classList.remove("active-link")
+    }
+    function changecolor3(){
+         home.classList.remove("active-link")
+         about.classList.remove("active-link")
+         project1.classList.add("active-link")
+         contact.classList.remove("active-link")
+    }
+    function changecolor4(){
+         home.classList.remove("active-link")
+         about.classList.remove("active-link")
+         project1.classList.remove("active-link")
+         contact.classList.add("active-link")
+    }
+       function myMenuFuction(){
+         let btn=document.getElementById("myNavMenu")
+          if(btn.className ==="nav-menu"){
+             btn.className+=" responsive"
+          }else{
+            btn.className="nav-menu"
+          }
+       }
+        
+       const body=document.querySelector("body"),toogleSwitch=document.getElementById("toogle-switch")
+        toogleSwitch.addEventListener("click",()=>{
+            body.classList.toggle("dark")
+        })
+     </script>
+</body>
+</html>
